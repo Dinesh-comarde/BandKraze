@@ -5,13 +5,442 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@900&family=Poppins:wght@400;500;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png" />
+    <title>BandKraze</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <h1 class="heading">BANDKRAZE</h1>
-    </div>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand me-3" href="#">
+          <img
+            src="./assets/icons/favicon.png"
+            alt="Logo"
+            width="24"
+            height="20"
+            class="d-inline-block align-text-center me-2" 
+          />
+          BandKraze
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"
+                >Events Near You</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Music Bands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Artists</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-title"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Partner With Us
+                <span
+                  ><img
+                    src="./assets/icons/down-arrow.png"
+                    alt="Logo"
+                    width="15"
+                    class="d-inline-block align-text-center"
+                /></span>
+              </a>
+              <ul class="dropdown-menu">
+                <h6 class="dropdown-header">How you want to partner with us</h6>
+                <li>
+                  <a class="d-flex dropdown-item flex-row" href="#">
+                    <img
+                      src="./assets/icons/music-note.png"
+                      alt="Logo"
+                      width="30"
+                      height="35"
+                      class="d-inline-block align-text-center me-3"
+                    />
+                    <div>
+                      As Music Band
+                      <p class="dropdown-para">
+                        Admin of the music band account
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="d-flex dropdown-item flex-row" href="#">
+                    <img
+                      src="./assets/icons/time.png"
+                      alt="Logo"
+                      width="30"
+                      height="35"
+                      class="d-inline-block align-text-center me-3"
+                    />
+                    <div>
+                      As Band Manager
+                      <p class="dropdown-para">
+                        Request to band manager account
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-lg-0 me-5 align-items-center">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-title"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/icons/placeholder.png"
+                  alt="Logo"
+                  width="18"
+                  class="d-inline-block align-text-center mb-1"
+                />
+                Bangalore
+                <span
+                  ><img
+                    src="./assets/icons/down-arrow.png"
+                    alt="Logo"
+                    width="15"
+                    class="d-inline-block align-text-center"
+                /></span>
+              </a>
+              <ul class="dropdown-menu">
+                <h6 class="dropdown-header">Search and Select Your City</h6>
+                <li>
+                  <form class="dropdown">
+                    <input
+                      class="form-control"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn btn-primary rounded-pill py-2 px-3"
+                type="submit"
+              >
+                Sign-up for Free
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar ends -->
+
+    <!-- Header -->
+    <header>
+      <div class="container d-flex justify-content-center">
+        <div class="row">
+          <div class="col-lg-9 m-auto">
+            <div class="d-flex flex-column align-items-center">
+              <h1 class="text-center">
+                Your Favourite Band Playing Your Song, Live Near You!
+              </h1>
+              <form class="d-flex header-search" role="search">
+                <input
+                  class="form-control rounded-pill mx-5 mt-4"
+                  type="search"
+                  placeholder="Search for Events and Artists"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header ends -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/po.6.0/umd/popper.min.js"></script> -->
+    <script src="./js/bootstrap.bundle.js"></script>
+    <!-- Navbar ends -->
+
+    <!-- Events -->
+    <section class="events">
+      <div class="container">
+        <div class="container-fluid">
+          <h3>
+            <span>Today in Bangalore, India</span
+            ><span><a href="#">Other location</a></span>
+          </h3>
+          <p>Find out what's happening near you!</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-6">
+          <div class="col">
+            <div class="card">
+              <div class="card-img-event">
+                <img
+                  src="./assets/Bangalore/bangalore-1.jpg"
+                  class="card-img-top"
+                  alt="Bangalore event - 1"
+                />
+                <div class="live">
+                  <button type="button" class="btn btn-danger btn-sm "><span
+                    ><img
+                      src="./assets/icons/new-moon.png"
+                      alt="clock"
+                      class="live-icon mb-1"
+                  /></span>
+                  <span>LIVE</span></button>
+                </div>
+                <div class="card-img-icon-text">
+                  <p class="card-text">
+                    <span
+                      ><img
+                        src="./assets/icons/clock (1).png"
+                        alt="clock"
+                        class="card-img-icon mb-1 ms-2 me-1"
+                    /></span>
+                    <span class="card-img-text"> 8:20 PM - 11:30 PM</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Led Zepplien</h5>
+                <p class="card-text">Rosanna bars and pubs</p>
+                <p class="card-time">
+                  <span>
+                    <img
+                      src="./assets/icons/location.png"
+                      alt="Logo"
+                      width="10"
+                      height="10"
+                      class="d-inline-block align-text-center" /></span
+                  ><span>Solapur Road, Bangalore</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-event">
+                <img
+                  src="./assets/Bangalore/bangalore-2.jpg"
+                  class="card-img-top"
+                  alt="Bangalore event - 2"
+                />
+                <div class="card-img-icon-text">
+                  <p class="card-text">
+                    <span
+                      ><img
+                        src="./assets/icons/clock (1).png"
+                        alt="clock"
+                        class="card-img-icon mb-1 ms-2 me-1"
+                    /></span>
+                    <span class="card-img-text"> 8:20 PM - 11:30 PM</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Imagine Dragons</h5>
+                <p class="card-text">Rosanna bars and pubs</p>
+                <p class="card-time">
+                  <span>
+                    <img
+                      src="./assets/icons/location.png"
+                      alt="Logo"
+                      width="10"
+                      height="10"
+                      class="d-inline-block align-text-center" /></span
+                  ><span>Solapur Road, Bangalore</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-event">
+                <img
+                  src="./assets/Bangalore/bangalore-3.jpg"
+                  class="card-img-top"
+                  alt="Bangalore event - 3"
+                />
+                <div class="card-img-icon-text">
+                  <p class="card-text">
+                    <span
+                      ><img
+                        src="./assets/icons/clock (1).png"
+                        alt="clock"
+                        class="card-img-icon mb-1 ms-2 me-1"
+                    /></span>
+                    <span class="card-img-text">
+                      8:20 PM - APR 15, 12:30 AM</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Red Hot Chilli Peppers</h5>
+                <p class="card-text">Rosanna bars and pubs</p>
+                <p class="card-time">
+                  <span>
+                    <img
+                      src="./assets/icons/location.png"
+                      alt="Logo"
+                      width="10"
+                      height="10"
+                      class="d-inline-block align-text-center" /></span
+                  ><span>Solapur Road, Bangalore</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-event">
+                <img
+                  src="./assets/Bangalore/bangalore-4.jpg"
+                  class="card-img-top"
+                  alt="Bangalore event - 4"
+                />
+                <div class="card-img-icon-text">
+                  <p class="card-text">
+                    <span
+                      ><img
+                        src="./assets/icons/clock (1).png"
+                        alt="clock"
+                        class="card-img-icon mb-1 ms-2 me-1"
+                    /></span>
+                    <span class="card-img-text"> 8:20 PM - 11:30 PM</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Guns N' Roses</h5>
+                <p class="card-text">Rosanna bars and pubs</p>
+                <p class="card-time">
+                  <span>
+                    <img
+                      src="./assets/icons/location.png"
+                      alt="Logo"
+                      width="10"
+                      height="10"
+                      class="d-inline-block align-text-center" /></span
+                  ><span>Solapur Road, Bangalore</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-event">
+                <img
+                  src="./assets/Bangalore/bangalore-5.jpg"
+                  class="card-img-top"
+                  alt="Bangalore event - 5"
+                />
+                <div class="card-img-icon-text">
+                  <p class="card-text">
+                    <span
+                      ><img
+                        src="./assets/icons/clock (1).png"
+                        alt="clock"
+                        class="card-img-icon mb-1 ms-2 me-1"
+                    /></span>
+                    <span class="card-img-text"> 8:20 PM - 11:30 PM</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Rolling Stones</h5>
+                <p class="card-text">Rosanna bars and pubs</p>
+                <p class="card-time">
+                  <span>
+                    <img
+                      src="./assets/icons/location.png"
+                      alt="Logo"
+                      width="10"
+                      height="10"
+                      class="d-inline-block align-text-center" /></span
+                  ><span>Solapur Road, Bangalore</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-event">
+                <img
+                  src="./assets/Bangalore/bangalore-6.jpg"
+                  class="card-img-top"
+                  alt="Bangalore event - 6"
+                />
+                <div class="card-img-icon-text">
+                  <p class="card-text">
+                    <span
+                      ><img
+                        src="./assets/icons/clock (1).png"
+                        alt="clock"
+                        class="card-img-icon mb-1 ms-2 me-1"
+                    /></span>
+                    <span class="card-img-text"> 8:20 PM - 11:30 PM</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Cold Play</h5>
+                <p class="card-text">Rosanna bars and pubs</p>
+                <p class="card-time">
+                  <span>
+                    <img
+                      src="./assets/icons/location.png"
+                      alt="Logo"
+                      width="10"
+                      height="10"
+                      class="d-inline-block align-text-center" /></span
+                  ><span>Solapur Road, Bangalore</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="cols-lg-12">
+            <div class="d-flex justify-content-center mt-4">
+              <button type="button" class="btn btn-dark rounded-pill px-5 py-2">
+                View All
+              </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./js/script.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
   </body>
 </html>
