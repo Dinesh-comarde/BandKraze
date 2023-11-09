@@ -523,3 +523,78 @@ header h1 {
 .popular-artists .card .profile-photo-container .btn-warning:hover {
   background-color: #f1f0f0;
 }
+
+/* Collaboration Styles */
+
+.collaboration {
+  height: 100%;
+  width: 100%;
+  background: rgb(234, 33, 123);
+}
+
+.collaboration .container-fluid {
+  padding: 0;
+}
+
+.collaboration .container-fluid .row .collaboration-container {
+  margin: 8% 0;
+}
+
+.collaboration
+  .container-fluid
+  .row
+  .collaboration-container
+  .collaboration-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.collaboration .container-fluid .row .collaboration-header {
+  margin-left: 6%;
+  margin-right: 9%;
+}
+
+.collaboration
+  .container-fluid
+  .row
+  .collaboration-container
+  .collaboration-heading {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-right: 9%;
+  line-height: 4rem;
+}
+
+.collaboration
+  .container-fluid
+  .row
+  .collaboration-container
+  .collaboration-heading
+  .collaboration-highlight {
+  font-weight: 700;
+}
+
+.collaboration
+  .container-fluid
+  .row
+  .collaboration-container
+  .collaboration-para {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.collaboration .container-fluid .row .collaboration-container .btn-dark {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.8rem;
+  border: none;
+}
+
+.collaboration .container-fluid .row .collaboration-container .btn-dark:hover {
+  background-color: #111;
+}
