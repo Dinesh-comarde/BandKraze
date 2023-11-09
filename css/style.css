@@ -121,8 +121,9 @@ header h1 {
 
 /* Events Styles */
 .events {
-  height: 100vh;
-  margin: 4% 15%;
+  max-width: 100%;
+  height: auto;
+  margin: 0% 15%;
 }
 
 .events h3 {
@@ -149,18 +150,18 @@ header h1 {
   border: none;
 }
 
-.card .card-img-event .card-img-top {
+.events .card .card-img-event .card-img-top {
   height: 175px;
   width: 100%;
   object-fit: cover;
   border-radius: 4% 4% 4% 4%;
 }
 
-.card-img-event {
+.events .card-img-event {
   position: relative;
 }
 
-.card-img-icon-text {
+.events .card-img-icon-text {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -193,38 +194,38 @@ header h1 {
   height: 50%;
 }
 
-.card .card-body {
+.events .card .card-body {
   margin: 0;
   padding: 0;
 }
 
-.card-title {
+.events .card-title {
   font-size: 0.9rem;
   font-weight: 700;
   color: #000;
   margin-top: 5%;
 }
 
-.card-text {
+.events .card-text {
   font-size: 0.7rem;
   font-weight: 500;
   color: #777;
   margin: 0;
 }
 
-.card-time {
+.events .card-time {
   font-size: 0.7rem;
   font-weight: 300;
   color: #aaa;
   margin-top: 1%;
 }
 
-.card-img-icon-text .card-img-icon {
+.events .card-img-icon-text .card-img-icon {
   width: 10%;
   height: 10%;
 }
 
-.card-img-text {
+.events .card-img-text {
   font-size: 0.8rem;
   font-weight: 300;
   color: #fff;
@@ -240,4 +241,154 @@ header h1 {
 .events .btn-dark:hover {
   background-color: #111;
   color: #fff;
+}
+
+/* Explore Styles */
+.explore {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 0, 164, 1) 0%,
+    rgba(111, 9, 121, 1) 31%,
+    rgba(0, 10, 208, 1) 100%
+  );
+}
+
+.all-container {
+  margin: 0% 8%;
+}
+
+.explore-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore .explore-buttons button {
+  font-size: 0.8rem;
+  margin-right: 1%;
+}
+
+.explore-heading {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.explore-events {
+  margin-bottom: 5%;
+}
+
+.explore .row .explore-events .card {
+  border: none;
+  margin-top: 3%;
+  background-color: #fff;
+}
+
+.explore-events .card .card-body {
+  border: none;
+}
+
+.explore-events .card .card-img-event .card-img-top {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+.explore-events .card-img-event {
+  position: relative;
+}
+
+.explore-events .card-img-event .card-img-date-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16%;
+  height: 25%;
+  margin: 2% 3%;
+  padding: 9% 5%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgb(231, 2, 136) 0%,
+    rgb(146, 0, 85) 100%,
+    rgba(111, 9, 121, 1) 31%
+  );
+  border-radius: 5% 5% 5% 5%;
+}
+
+.explore-events .card-img-date-text .card-img-text {
+  font-weight: 500;
+  color: #fff;
+}
+
+.explore-events .card-img-date-text #day {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+
+.explore-events .card-img-date-text #date {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.explore-events .card-date-time {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.explore-events .card-body .card-date-time .card-img-icon {
+  width: 6%;
+  height: 6%;
+}
+
+.explore-events .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  margin-top: 5%;
+}
+
+.explore-events .card-body .card-time {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.explore-events .card-footer .text-body-secondary {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.explore-events .card-footer .card-footer-add {
+  font-size: 0.6rem;
+}
+
+.explore .explore-icon {
+  margin-top: 14%;
+}
+
+.explore .explore-icon .arrows {
+  width: 40%;
+  height: 40%;
+  background-color: #fff;
+  padding: 10% 10%;
+  border-radius: 50%;
+}
+
+.explore .explore-icon .arrows:hover {
+  background-color: #ccc;
+}
+
+@media (max-width: 992px) {
+  .left-arrow,
+  .right-arrow {
+    display: none;
+  }
 }
