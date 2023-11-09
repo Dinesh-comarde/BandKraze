@@ -598,3 +598,150 @@ header h1 {
 .collaboration .container-fluid .row .collaboration-container .btn-dark:hover {
   background-color: #111;
 }
+
+/* Footer Styles */
+
+.footer-wrapper {
+  background: rgb(234, 33, 123);
+  overflow: hidden;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 50px 50px 0 0;
+}
+
+footer .footer-container {
+  margin: 0% 15%;
+  padding-top: 4%;
+  padding-bottom: 3%;
+}
+
+.footer-logo-text {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.footer-para {
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.footer-icon {
+  width: 12%;
+  height: 12%;
+}
+
+.footer-headings {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8%;
+}
+
+.footer-list {
+  list-style: none;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 2%;
+  padding: 0;
+}
+
+.footer-list-item {
+  margin-bottom: 2%;
+}
+
+.footer-list-link {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 2%;
+}
+
+.footer-list-link:hover {
+  text-decoration: #f1f1f1;
+}
+
+.footer-subscribe {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.footer-form .btn-success {
+  background-color: #e63d00;
+  color: #fff;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.footer-form .btn-success:hover {
+  background-color: #9d2c03;
+}
+
+.footer-form input::placeholder {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.footer-divider {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(84, 3, 135);
+  margin-top: 8%;
+}
+
+.copyright-text {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-top: 1%;
+}
+
+@media (max-width: 768px) {
+  .footer-logo-text {
+    font-size: 1.2rem;
+  }
+
+  .footer-headings {
+    font-size: 0.9rem;
+  }
+
+  .footer-list {
+    font-size: 0.7rem;
+  }
+
+  .footer-list-link {
+    font-size: 0.7rem;
+  }
+
+  .footer-subscribe {
+    font-size: 0.7rem;
+  }
+
+  .footer-form input {
+    width: 50%;
+    height: 50%;
+  }
+
+  .footer-form input::placeholder {
+    font-size: 0.7rem;
+  }
+
+  .footer-divider {
+    margin-top: 5%;
+  }
+
+  .footer-para {
+    font-size: 0.7rem;
+  }
+
+  .footer-icon {
+    width: 15%;
+    height: 15%;
+  }
+}
