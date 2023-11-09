@@ -255,7 +255,7 @@ header h1 {
   );
 }
 
-.all-container {
+.explore-container {
   margin: 0% 8%;
 }
 
@@ -391,4 +391,135 @@ header h1 {
   .right-arrow {
     display: none;
   }
+}
+
+/* Popular Bands Styles */
+.popular-band {
+  height: 100%;
+  width: 100%;
+  background: #f9f9f9;
+}
+
+.popular-container {
+  margin: 0% 15%;
+}
+
+.popular-heading {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.popular-para {
+  color: #777;
+  font-size: 0.7rem;
+}
+
+.popular-link {
+  color: rgb(212, 63, 4);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.popular-link:hover {
+  text-decoration: underline;
+}
+
+.popular-band .card {
+  border: none;
+  margin-top: 3%;
+  background-color: #f9f9f9;
+}
+
+.popular-band .card .card-body {
+  border: none;
+  margin: 1%;
+  padding: 1%;
+}
+
+.popular-band .card .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.popular-band .card .card-text {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 3%;
+}
+
+.popular-band .btn-warning {
+  background: linear-gradient(
+    90deg,
+    rgba(253, 59, 29, 1) 83%,
+    rgba(254, 122, 4, 1) 99%
+  );
+  color: #fff;
+  font-size: 0.7rem;
+  border: none;
+}
+
+.popular-band .btn-warning:hover {
+  background-color: #9d2c03;
+  color: #fff;
+}
+
+/* Music Artists Styles */
+
+.popular-artists {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.popular-artists .card .profile-photo-container .profile-photo {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.popular-artists-container {
+  margin: 0% 15%;
+}
+
+.popular-artists .popular-artists-container .card {
+  border: none;
+  margin-top: 3%;
+  padding: 10% 0;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.popular-artists .popular-artists-container .card .card-body {
+  border: none;
+  margin: 1%;
+  padding: 1%;
+}
+
+.popular-artists .card .profile-photo-container .card-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #000;
+  margin-top: 20%;
+  margin-bottom: 0;
+  letter-spacing: 0.03rem;
+}
+
+.popular-artists .card .profile-photo-container .card-text {
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 3%;
+}
+
+.popular-artists .card .profile-photo-container .btn-warning {
+  background-color: #f5f5f5;
+  color: #000;
+  font-size: 0.6rem;
+  border: none;
+}
+
+.popular-artists .card .profile-photo-container .btn-warning:hover {
+  background-color: #f1f0f0;
 }
